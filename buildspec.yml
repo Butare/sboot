@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Entered the build phase...
+      - gradle clean build
+  post_build:
+    commands:
+      - echo Build completed successfully
+
+  artifacts:
+    files:
+      - build/libs/order-service-1.0.0.jar
+    discard-paths: yes
