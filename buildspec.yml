@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build completed successfully
 
-  artifacts:
-    files:
-      - build/libs/order-service-1.0.0.jar
-    discard-paths: yes
+artifacts:
+  files:
+    - build/libs/order-service-1.0.0.jar
+  discard-paths: yes
